@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Rush - Racing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="game-wrapper">
+
+    <div class="hud">
+        <div>
+            <span>SCORE</span>
+            <strong id="score">0</strong>
+        </div>
+
+        <div>
+            <span>LEVEL</span>
+            <strong id="level">1</strong>
+        </div>
+
+        <div>
+            <span>COINS</span>
+            <strong id="coins">0</strong>
+        </div>
+
+        <div>
+            <span>SPEED</span>
+            <strong id="speed">1</strong>
+        </div>
+    </div>
+
+    <div id="game">
+        <div class="road-lines"></div>
+
+        <div id="player" class="car">
+            <div class="car-body"></div>
+            <div class="window"></div>
+            <div class="light light-left"></div>
+            <div class="light light-right"></div>
+        </div>
+
+        <div id="nitro-bar">
+            <div id="nitro-fill"></div>
+            <span>NITRO</span>
+        </div>
+
+        <div id="start-screen" class="screen">
+            <h1>NEON <span>RUSH</span></h1>
+            <p>Cyber Racing Challenge</p>
+
+            <button id="startBtn">START RACE</button>
+
+            <div class="controls">
+                <p>← → / A D &nbsp; Move</p>
+                <p>SPACE &nbsp; Nitro</p>
+                <p>P &nbsp; Pause</p>
+            </div>
+        </div>
+
+        <div id="game-over" class="screen hidden">
+            <h1>GAME OVER</h1>
+            <p>Your Score</p>
+            <strong id="final-score">0</strong>
+
+            <p>High Score: <span id="high-score">0</span></p>
+
+            <button id="restartBtn">PLAY AGAIN</button>
+        </div>
+
+        <div id="pause-screen" class="screen hidden">
+            <h1>PAUSED</h1>
+            <p>Press P to continue</p>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
